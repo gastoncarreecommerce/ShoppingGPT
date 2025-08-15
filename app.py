@@ -108,7 +108,7 @@ def vtex_search(term, seller_id, sc):
 @app.route("/api/chat", methods=["POST"])
 def chat():
     body = request.get_json(force=True) or {}
-    message = (body.get("message") or "").trim() if hasattr(str, "trim") else (body.get("message") or "").strip()
+    message = (body.get("message") or "").strip()
     ctx = body.get("context") or {}
     seller_id = (ctx.get("sellerId") or DEFAULT_SELLER)
     sc = (ctx.get("sc") or DEFAULT_SC)
@@ -129,3 +129,6 @@ def chat():
 @app.route("/", methods=["GET"])
 def health():
     return "OK"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", "8080")))
