@@ -177,7 +177,7 @@ python-multipart==0.0.9
 python-ptrace==0.9.9
 python-socketio==5.11.3
 pytz==2024.1
-pywin32==306
+pywin32==306; platform_system == "Windows"
 PyYAML==6.0.1
 realtime==1.0.6
 referencing==0.35.1
@@ -238,4 +238,5 @@ wsproto==1.2.0
 xxhash==3.4.1
 yarl==1.9.4
 zipp==3.19.2
+
 
