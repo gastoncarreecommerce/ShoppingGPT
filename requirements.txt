@@ -24,7 +24,7 @@ colorama==0.4.6
 construct==2.5.3
 contourpy==1.2.1
 cycler==0.12.1
-dataclasses-json==0.5.14
+dataclasses-json==0.6.7
 datasets==2.20.0
 defusedxml==0.7.1
 Deprecated==1.2.14
@@ -238,3 +238,4 @@ wsproto==1.2.0
 xxhash==3.4.1
 yarl==1.9.4
 zipp==3.19.2
+
